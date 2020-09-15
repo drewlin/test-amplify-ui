@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/ping",
+            "lambdaFunction": "testamplifylambda",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/ping"
+        }
+    ],
+    "resourceName": "apiping",
+    "apiName": "apiping",
+    "functionArns": [
+        {
+            "lambdaFunction": "testamplifylambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-testamplifyui-dev-214138-authRole",
+        "unAuthRoleName": "amplify-testamplifyui-dev-214138-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "testamplifylambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
